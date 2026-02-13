@@ -1,0 +1,92 @@
+2026-02-05 22:53:57 | INFO     | experiments | ======================================================================
+2026-02-05 22:53:57 | INFO     | experiments | STARTING MINIMAL EXPERIMENTAL SUITE (Section 6.1 Protocol)
+2026-02-05 22:53:57 | INFO     | experiments | ======================================================================
+2026-02-05 22:53:57 | INFO     | experiments | 
+[PHASE 1] Running baseline methods...
+2026-02-05 22:53:57 | INFO     | experiments | 
+======================================================================
+2026-02-05 22:53:57 | INFO     | experiments | Running baseline methods on tsp:random30 (2 runs)
+2026-02-05 22:53:57 | INFO     | experiments | ======================================================================
+2026-02-05 22:53:57 | INFO     | experiments | Applicable methods for tsp: ['ACO']
+2026-02-05 22:54:05 | INFO     | experiments |   [OK] ACO: 2/2 runs, mean=455.1692
+2026-02-05 22:54:05 | WARNING  | experiments |   Skipping tsp:random30 - 'bool' object is not callable
+2026-02-05 22:54:05 | INFO     | experiments | 
+======================================================================
+2026-02-05 22:54:05 | INFO     | experiments | Running baseline methods on tsp:random50 (2 runs)
+2026-02-05 22:54:05 | INFO     | experiments | ======================================================================
+2026-02-05 22:54:05 | INFO     | experiments | Applicable methods for tsp: ['ACO']
+2026-02-05 22:55:14 | INFO     | experiments |   [OK] ACO: 2/2 runs, mean=567.4202
+2026-02-05 22:55:14 | WARNING  | experiments |   Skipping tsp:random50 - 'bool' object is not callable
+2026-02-05 22:55:14 | INFO     | experiments | 
+======================================================================
+2026-02-05 22:55:14 | INFO     | experiments | Running baseline methods on optimization:rastrigin_10d (2 runs)
+2026-02-05 22:55:14 | INFO     | experiments | ======================================================================
+2026-02-05 22:55:14 | INFO     | experiments | Applicable methods for optimization: ['PSO']
+2026-02-05 22:55:21 | INFO     | experiments |   [OK] PSO: 2/2 runs, mean=14.9244
+2026-02-05 22:55:21 | WARNING  | experiments |   Skipping optimization:rastrigin_10d - 'bool' object is not callable
+2026-02-05 22:55:21 | INFO     | experiments | 
+======================================================================
+2026-02-05 22:55:21 | INFO     | experiments | Running baseline methods on optimization:ackley_10d (2 runs)
+2026-02-05 22:55:21 | INFO     | experiments | ======================================================================
+2026-02-05 22:55:21 | INFO     | experiments | Applicable methods for optimization: ['PSO']
+2026-02-05 22:55:27 | INFO     | experiments |   [OK] PSO: 2/2 runs, mean=1.9815
+2026-02-05 22:55:27 | WARNING  | experiments |   Skipping optimization:ackley_10d - 'bool' object is not callable
+2026-02-05 22:55:27 | INFO     | experiments | 
+======================================================================
+2026-02-05 22:55:27 | INFO     | experiments | Running baseline methods on optimization:sphere_10d (2 runs)
+2026-02-05 22:55:27 | INFO     | experiments | ======================================================================
+2026-02-05 22:55:27 | INFO     | experiments | Applicable methods for optimization: ['PSO']
+2026-02-05 22:55:31 | INFO     | experiments |   [OK] PSO: 2/2 runs, mean=0.0000
+2026-02-05 22:55:31 | WARNING  | experiments |   Skipping optimization:sphere_10d - 'bool' object is not callable
+2026-02-05 22:55:31 | INFO     | experiments | 
+======================================================================
+2026-02-05 22:55:31 | INFO     | experiments | Running baseline methods on clustering:iris (2 runs)
+2026-02-05 22:55:31 | INFO     | experiments | ======================================================================
+2026-02-05 22:55:31 | INFO     | experiments | Applicable methods for clustering: ['Kohonen']
+2026-02-05 22:56:48 | INFO     | experiments |   [OK] Kohonen: 2/2 runs, mean=0.6396
+2026-02-05 22:56:48 | WARNING  | experiments |   Skipping clustering:iris - 'bool' object is not callable
+2026-02-05 22:56:48 | INFO     | experiments | 
+[PHASE 2] Running LLM orchestrator...
+2026-02-05 22:56:48 | INFO     | experiments | 
+==> Orchestrator on tsp:random30 (2 runs)
+2026-02-05 22:57:07 | INFO     | experiments |   [OK] Run 1: AntColonyOptimization, fitness=456.8803, time=18.86s
+2026-02-05 22:58:09 | INFO     | experiments |   [OK] Run 2: AntColonyOptimization, fitness=458.5345, time=61.83s
+2026-02-05 22:58:09 | WARNING  | experiments |   Skipping tsp:random30 - 'bool' object is not callable
+2026-02-05 22:58:09 | INFO     | experiments | 
+==> Orchestrator on tsp:random50 (2 runs)
+2026-02-05 22:59:25 | INFO     | experiments |   [OK] Run 1: AntColonyOptimization, fitness=563.1770, time=76.08s
+2026-02-05 23:00:48 | INFO     | experiments |   [OK] Run 2: AntColonyOptimization, fitness=569.2754, time=83.64s
+2026-02-05 23:00:48 | WARNING  | experiments |   Skipping tsp:random50 - 'bool' object is not callable
+2026-02-05 23:00:48 | INFO     | experiments | 
+==> Orchestrator on optimization:rastrigin_10d (2 runs)
+2026-02-05 23:01:28 | INFO     | experiments |   [OK] Run 1: ParticleSwarmOptimization, fitness=15.9193, time=40.02s
+2026-02-05 23:02:23 | INFO     | experiments |   [OK] Run 2: ParticleSwarmOptimization, fitness=11.9395, time=54.92s
+2026-02-05 23:02:23 | WARNING  | experiments |   Skipping optimization:rastrigin_10d - 'bool' object is not callable
+2026-02-05 23:02:23 | INFO     | experiments | 
+==> Orchestrator on optimization:ackley_10d (2 runs)
+2026-02-05 23:02:58 | INFO     | experiments |   [OK] Run 1: ParticleSwarmOptimization, fitness=1.6462, time=34.72s
+2026-02-05 23:03:37 | INFO     | experiments |   [OK] Run 2: ParticleSwarmOptimization, fitness=0.0000, time=39.40s
+2026-02-05 23:03:37 | WARNING  | experiments |   Skipping optimization:ackley_10d - 'bool' object is not callable
+2026-02-05 23:03:37 | INFO     | experiments | 
+==> Orchestrator on optimization:sphere_10d (2 runs)
+2026-02-05 23:04:25 | INFO     | experiments |   [OK] Run 1: ParticleSwarmOptimization, fitness=0.0000, time=47.52s
+2026-02-05 23:04:36 | INFO     | experiments |   [OK] Run 2: ParticleSwarmOptimization, fitness=0.0000, time=11.19s
+2026-02-05 23:04:36 | WARNING  | experiments |   Skipping optimization:sphere_10d - 'bool' object is not callable
+2026-02-05 23:04:36 | INFO     | experiments | 
+==> Orchestrator on clustering:iris (2 runs)
+2026-02-05 23:05:24 | WARNING  | experiments |   Skipping clustering:iris - All 2 orchestrator runs failed for clustering:iris
+2026-02-05 23:05:24 | INFO     | experiments | 
+[PHASE 3] Performing statistical analysis...
+2026-02-05 23:05:24 | INFO     | experiments | 
+======================================================================
+2026-02-05 23:05:24 | INFO     | experiments | STATISTICAL ANALYSIS: LLM Orchestrator vs Best Baseline
+2026-02-05 23:05:24 | INFO     | experiments | ======================================================================
+2026-02-05 23:05:24 | INFO     | experiments | 
+[PHASE 4] Generating final report...
+2026-02-05 23:05:24 | INFO     | experiments | Experiment report saved to results\experiment_report_20260205_230524.txt
+2026-02-05 23:05:24 | INFO     | experiments | Analysis data saved to results\analysis_data_20260205_230524.json
+2026-02-05 23:05:24 | INFO     | experiments | 
+======================================================================
+2026-02-05 23:05:24 | INFO     | experiments | EXPERIMENTAL SUITE COMPLETED IN 11.4 MINUTES
+2026-02-05 23:05:24 | INFO     | experiments | Full report saved to: results\experiment_report_20260205_230524.txt
+2026-02-05 23:05:24 | INFO     | experiments | ======================================================================

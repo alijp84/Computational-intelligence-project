@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-02-05T23:04:54.475775",
+  "results": {
+    "problem": {
+      "type": "clustering",
+      "instance": "iris",
+      "description": {
+        "problem_type": "unsupervised_clustering",
+        "domain": "customer_segmentation_or_pattern_discovery",
+        "name": "iris",
+        "n_samples": 150,
+        "n_features": 4,
+        "feature_names": [
+          "sepal length (cm)",
+          "sepal width (cm)",
+          "petal length (cm)",
+          "petal width (cm)"
+        ],
+        "target_clusters": 3,
+        "has_true_labels": true,
+        "characteristics": "Small benchmark dataset (150 samples) with 4 features and 3 known species; well-separated clusters",
+        "evaluation_approach": "Internal validation (Silhouette, DB, CH) + External validation (ARI, NMI) when labels available",
+        "instance_name": "iris",
+        "preferences": {
+          "time_limit": 45,
+          "priority": "quality"
+        }
+      },
+      "preferences": {
+        "time_limit": 45,
+        "priority": "quality"
+      }
+    },
+    "iterations": [
+      {
+        "iteration": 1,
+        "llm_analysis": {
+          "method": "Kohonen SOM",
+          "parameters": {
+            "map_size": 10,
+            "learning_rate": 0.5,
+            "neighbourhood_radius": 1.5,
+            "epochs": 100
+          },
+          "reasoning": "Given the small dataset size (150 samples) and 4 features, Kohonen SOM is well-suited for topology preservation and visual cluster discovery. The map size is set to 10 based on the rule of thumb, which is sqrt(5*sqrt(150)) \u2248 10. The learning rate and neighbourhood radius are set to moderate values to balance exploration and exploitation. The number of epochs is set to 100 to ensure convergence within the given time limit of 45 minutes. This configuration should yield high-quality clusters with good internal cohesion and separation, as measured by the Silhouette Score and other metrics.",
+          "backup_method": null,
+          "confidence": 0.9
+        },
+        "method_execution": {
+          "method_used": "Kohonen SOM",
+          "best_solution": null,
+          "best_fitness": Infinity,
+          "computation_time": 0.0,
+          "convergence_history": [],
+          "iterations_completed": 0,
+          "error": "Unknown method: Kohonen SOM. Available: ['GA', 'PSO', 'ACO', 'GP', 'Perceptron', 'MLP', 'Kohonen', 'Hopfield', 'Fuzzy']"
+        },
+        "llm_feedback": {
+          "performance_rating": "ACCEPTABLE",
+          "assessment": "Partial metrics available (fitness=inf)",
+          "observations": [
+            "Fitness: inf",
+            "Time: 0.00s"
+          ],
+          "recommendations": [
+            "Increase iterations for better convergence"
+          ],
+          "confidence_rating": "LOW"
+        },
+        "improvement_suggestions": [
+          "Increase iterations for better convergence"
+        ],
+        "duration": 9.807390928268433
+      },
+      {
+        "iteration": 2,
+        "llm_analysis": {
+          "method": "Kohonen",
+          "parameters": {
+            "map_size": 15,
+            "learning_rate": 0.1,
+            "neighbourhood_radius": 1.0,
+            "epochs": 200
+          },
+          "reasoning": "Given the small dataset size (150 samples) and 4 features, Kohonen SOM is still a suitable choice for exploratory clustering analysis. The map_size is set to 15 based on the rule of thumb, considering n_samples = 150 and n_clusters = 3. A smaller learning_rate (0.1) and neighbourhood_radius (1.0) are chosen to ensure a more stable convergence. Increasing the number of epochs (200) will allow for a more thorough exploration of the data distribution.",
+          "backup_method": null,
+          "confidence": 0.8
+        },
+        "method_execution": {
+          "method_used": "Kohonen",
+          "best_solution": null,
+          "best_fitness": Infinity,
+          "computation_time": 0.0,
+          "convergence_history": [],
+          "iterations_completed": 0,
+          "error": "'int' object is not subscriptable"
+        },
+        "llm_feedback": {
+          "performance_rating": "ACCEPTABLE",
+          "assessment": "Partial metrics available (fitness=inf)",
+          "observations": [
+            "Fitness: inf",
+            "Time: 0.00s"
+          ],
+          "recommendations": [
+            "Increase iterations for better convergence"
+          ],
+          "confidence_rating": "LOW"
+        },
+        "improvement_suggestions": [
+          "Increase iterations for better convergence"
+        ],
+        "duration": 5.777192115783691
+      },
+      {
+        "iteration": 3,
+        "llm_analysis": {
+          "method": "Kohonen SOM",
+          "parameters": {
+            "map_size": 15,
+            "learning_rate": 0.1,
+            "neighbourhood_radius": 1.0,
+            "epochs": 200
+          },
+          "reasoning": "Given the small dataset size (150 samples) and 4 features, Kohonen SOM is suitable for topology preservation and visual cluster discovery. The map_size is calculated based on the rule of thumb: sqrt(5*sqrt(n_samples)) = sqrt(5*sqrt(150)) \u2248 15. This value is chosen to balance between the number of clusters (3) and the dataset size. The learning_rate and neighbourhood_radius are set to moderate values to allow for exploration and convergence. The epochs are set to 200 to ensure sufficient training time within the given time limit (45 minutes).",
+          "backup_method": null,
+          "confidence": 0.85
+        },
+        "method_execution": {
+          "method_used": "Kohonen SOM",
+          "best_solution": null,
+          "best_fitness": Infinity,
+          "computation_time": 0.0,
+          "convergence_history": [],
+          "iterations_completed": 0,
+          "error": "Unknown method: Kohonen SOM. Available: ['GA', 'PSO', 'ACO', 'GP', 'Perceptron', 'MLP', 'Kohonen', 'Hopfield', 'Fuzzy']"
+        },
+        "llm_feedback": {
+          "performance_rating": "ACCEPTABLE",
+          "assessment": "Partial metrics available (fitness=inf)",
+          "observations": [
+            "Fitness: inf",
+            "Time: 0.00s"
+          ],
+          "recommendations": [
+            "Increase iterations for better convergence"
+          ],
+          "confidence_rating": "LOW"
+        },
+        "improvement_suggestions": [
+          "Increase iterations for better convergence"
+        ],
+        "duration": 2.1134681701660156
+      }
+    ],
+    "final_solution": null,
+    "metadata": {
+      "orchestrator_version": "1.0",
+      "timestamp": "2026-02-05T23:04:36.773500",
+      "total_time": 17.769737005233765,
+      "llm_model": "meta-llama/llama-3.1-8b-instruct",
+      "iterations_completed": 3
+    },
+    "report": "\nMETAMIND CI FRAMEWORK - FINAL REPORT\n=====================================\nProblem: CLUSTERING - iris\nTimestamp: 2026-02-05T23:04:36.773500\nTotal Execution Time: 17.77 seconds\nIterations Completed: 3\n\nBEST SOLUTION\n-------------\nMethod: UNKNOWN\nFitness/Quality: inf\nComputation Time: 0.00s\nIterations to Convergence: 0\n\nITERATION SUMMARY\n-----------------\nIteration 1: Kohonen SOM | Fitness:      inf | Rating: ACCEPTABLE | Time:  9.81s\nIteration 2: Kohonen    | Fitness:      inf | Rating: ACCEPTABLE | Time:  5.78s\nIteration 3: Kohonen SOM | Fitness:      inf | Rating: ACCEPTABLE | Time:  2.11s\n\nLLM INSIGHTS\n------------\nFinal Assessment: Partial metrics available (fitness=inf)\nKey Observations:\n  * Fitness: inf\n  * Time: 0.00s\n\nRecommendations:\n  * Increase iterations for better convergence\n\n=====================================\nReport generated by MetaMind Orchestrator v1.0\nLLM Model: meta-llama/llama-3.1-8b-instruct\n"
+  }
+}

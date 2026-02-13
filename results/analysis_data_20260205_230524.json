@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-02-05T23:05:24.470918",
+  "results": {
+    "summary": {
+      "total_instances": 5,
+      "llm_better": 1,
+      "llm_equal": 2,
+      "llm_worse": 2,
+      "selection_accuracy": 0.0,
+      "avg_improvement_percent": 50.08455926418178
+    },
+    "per_instance": {
+      "tsp:random30": {
+        "instance": "random30",
+        "orchestrator": {
+          "best_fitness": 456.8802912649491,
+          "mean_fitness": 457.70738016193695,
+          "std_fitness": 1.1696803354084553,
+          "success_rate": 100.0,
+          "best_method": "AntColonyOptimization",
+          "method_selections": [
+            "AntColonyOptimization",
+            "AntColonyOptimization"
+          ]
+        },
+        "best_baseline": {
+          "method": "ACO",
+          "best_fitness": 451.76700077433475,
+          "mean_fitness": 455.1691574103701,
+          "std_fitness": 3.4021566360353006
+        },
+        "comparison": {
+          "improvement_percent": -1.1318424058973124,
+          "llm_better": "False",
+          "llm_worse": "False",
+          "statistically_significant": null,
+          "gap_to_baseline": 1.1318424058973124
+        }
+      },
+      "tsp:random50": {
+        "instance": "random50",
+        "orchestrator": {
+          "best_fitness": 563.177041486935,
+          "mean_fitness": 566.2262123775911,
+          "std_fitness": 4.312178827559207,
+          "success_rate": 100.0,
+          "best_method": "AntColonyOptimization",
+          "method_selections": [
+            "AntColonyOptimization",
+            "AntColonyOptimization"
+          ]
+        },
+        "best_baseline": {
+          "method": "ACO",
+          "best_fitness": 564.1348204757215,
+          "mean_fitness": 567.4202055360871,
+          "std_fitness": 3.28538506036557
+        },
+        "comparison": {
+          "improvement_percent": 0.16977838524112013,
+          "llm_better": "False",
+          "llm_worse": "False",
+          "statistically_significant": null,
+          "gap_to_baseline": 0.16977838524112013
+        }
+      },
+      "optimization:rastrigin_10d": {
+        "instance": "rastrigin_10d",
+        "orchestrator": {
+          "best_fitness": 11.93949899903528,
+          "mean_fitness": 13.929414401997768,
+          "std_fitness": 2.8141653508446733,
+          "success_rate": 50.0,
+          "best_method": "ParticleSwarmOptimization",
+          "method_selections": [
+            "ParticleSwarmOptimization",
+            "ParticleSwarmOptimization"
+          ]
+        },
+        "best_baseline": {
+          "method": "PSO",
+          "best_fitness": 8.954626972579462,
+          "mean_fitness": 14.924374115917871,
+          "std_fitness": 5.9697471433384095
+        },
+        "comparison": {
+          "improvement_percent": -33.3332927836747,
+          "llm_better": "False",
+          "llm_worse": "True",
+          "statistically_significant": null,
+          "gap_to_baseline": 33.3332927836747
+        }
+      },
+      "optimization:ackley_10d": {
+        "instance": "ackley_10d",
+        "orchestrator": {
+          "best_fitness": 1.0862720551063632e-05,
+          "mean_fitness": 0.8231172491821082,
+          "std_fitness": 1.1640482150098441,
+          "success_rate": 50.0,
+          "best_method": "ParticleSwarmOptimization",
+          "method_selections": [
+            "ParticleSwarmOptimization",
+            "ParticleSwarmOptimization"
+          ]
+        },
+        "best_baseline": {
+          "method": "PSO",
+          "best_fitness": 1.646223737364377,
+          "mean_fitness": 1.9815362663224598,
+          "std_fitness": 0.3353125289580827
+        },
+        "comparison": {
+          "improvement_percent": 99.99934014312244,
+          "llm_better": "True",
+          "llm_worse": "False",
+          "statistically_significant": null,
+          "gap_to_baseline": 99.99934014312244
+        }
+      },
+      "optimization:sphere_10d": {
+        "instance": "sphere_10d",
+        "orchestrator": {
+          "best_fitness": 5.070660826737411e-10,
+          "mean_fitness": 9.696085930988749e-09,
+          "std_fitness": 1.2995236494402645e-08,
+          "success_rate": 50.0,
+          "best_method": "ParticleSwarmOptimization",
+          "method_selections": [
+            "ParticleSwarmOptimization",
+            "ParticleSwarmOptimization"
+          ]
+        },
+        "best_baseline": {
+          "method": "PSO",
+          "best_fitness": 8.242623387261506e-11,
+          "mean_fitness": 3.0774681187099327e-10,
+          "std_fitness": 2.2532057799837822e-10
+        },
+        "comparison": {
+          "improvement_percent": -515.1756047199515,
+          "llm_better": "False",
+          "llm_worse": "True",
+          "statistically_significant": null,
+          "gap_to_baseline": 515.1756047199515
+        }
+      }
+    },
+    "method_selection": {
+      "tsp:random30": {
+        "expected_best": "ACO",
+        "llm_selected": "AntColonyOptimization",
+        "match": false
+      },
+      "tsp:random50": {
+        "expected_best": "ACO",
+        "llm_selected": "AntColonyOptimization",
+        "match": false
+      },
+      "optimization:rastrigin_10d": {
+        "expected_best": "PSO",
+        "llm_selected": "ParticleSwarmOptimization",
+        "match": false
+      },
+      "optimization:ackley_10d": {
+        "expected_best": "PSO",
+        "llm_selected": "ParticleSwarmOptimization",
+        "match": false
+      },
+      "optimization:sphere_10d": {
+        "expected_best": "PSO",
+        "llm_selected": "ParticleSwarmOptimization",
+        "match": false
+      }
+    },
+    "statistical_tests": {},
+    "summary_table": [
+      {
+        "Problem": "TSP (small)",
+        "Best Method": "ACO",
+        "LLM Selected": "AntColonyOptimization",
+        "LLM Accuracy": "[FAIL]"
+      },
+      {
+        "Problem": "TSP (large)",
+        "Best Method": "ACO",
+        "LLM Selected": "AntColonyOptimization",
+        "LLM Accuracy": "[FAIL]"
+      },
+      {
+        "Problem": "Rastrigin",
+        "Best Method": "PSO",
+        "LLM Selected": "ParticleSwarmOptimization",
+        "LLM Accuracy": "[FAIL]"
+      },
+      {
+        "Problem": "Ackley",
+        "Best Method": "PSO",
+        "LLM Selected": "ParticleSwarmOptimization",
+        "LLM Accuracy": "[FAIL]"
+      },
+      {
+        "Problem": "Sphere",
+        "Best Method": "PSO",
+        "LLM Selected": "ParticleSwarmOptimization",
+        "LLM Accuracy": "[FAIL]"
+      }
+    ]
+  }
+}
