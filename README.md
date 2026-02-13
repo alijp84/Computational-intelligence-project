@@ -1,4 +1,3 @@
-```markdown
 # MetaMind CI Framework
 
 Project by Ali Jabbari Pour  
@@ -10,7 +9,7 @@ This project implements an LLM-based system that automatically selects and confi
 ## Setup Instructions
 
 1. Install required packages:
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -25,22 +24,22 @@ pip install -r requirements.txt
 3. Run the program:
 
    Basic usage (TSP example with mock LLM to avoid API costs):
-   ```
+   ```bash
    python main.py --problem-type tsp --instance eil51 --time-limit 60 --mock-llm
    ```
 
    Run multiple times for statistics:
-   ```
+   ```bash
    python main.py --problem-type tsp --instance eil51 --runs 5 --mock-llm
    ```
 
    Run full experiment protocol:
-   ```
+   ```bash
    python experiments.py --mock-llm --runs 5
    ```
 
    Generate final report after experiments:
-   ```
+   ```bash
    python main.py --mode report
    ```
 
