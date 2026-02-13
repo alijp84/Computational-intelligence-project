@@ -90,7 +90,7 @@ MetaMind/
 ├── main.py                 # CLI entry point
 ├── results/                # CSV data and logs
 └── reports/                # Performance summaries
-
+```
 ## Results and Validation
 
 ### Method Selection Accuracy
