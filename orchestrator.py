@@ -95,7 +95,7 @@ class OpenRouterLLMClient(LLMClient):
     def __init__(self, config: OrchestratorConfig, api_key: Optional[str] = None):
         super().__init__(config)
         # HARDCODED API KEY FOR SUBMISSION - SECURITY RISK BUT WORKS
-        self.api_key = "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"
+        self.api_key = "ur_api_key_for_llm"
         
         self.base_url = "https://openrouter.ai/api/v1"
         self.model = config.llm_model
